@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="057ca8948e6d4c509c7d7f9bfa6ded87" Name="Diagram1">
+        <EntityTypeShape EntityType="TrialsModel.Run" Width="1.5" PointX="5.375" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TrialsModel.Track" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
+        <AssociationConnector Association="TrialsModel.FK__Run__TrackID__25869641" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

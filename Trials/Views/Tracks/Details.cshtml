@@ -1,0 +1,48 @@
+﻿@model Trials.Track
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Track</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.GoldTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GoldTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Desc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Desc)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.AverageFaults)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AverageFaults)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.AverageTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AverageTime)
+        </dd>
+    </dl>
+    @Html.Partial("~/Views/Shared/_RunPartial.cshtml", ViewData.Model.Runs)
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.TrackId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
